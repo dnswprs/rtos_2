@@ -5,17 +5,13 @@ Proyek ini mengimplementasikan sistem kontrol LED menggunakan STM32 dengan FreeR
 
 ## Fitur
 - Menggunakan FreeRTOS untuk manajemen task
-- Mengimplementasikan 3 task terpisah:
-  - Default Task
+- Mengimplementasikan 2 task terpisah:
   - Green LED Task
   - Red LED Task
 - Kontrol LED dengan pola berkedip yang terkoordinasi
 - Konfigurasi sistem clock untuk performa optimal
 
 ## Penjelasan Task
-
-### Default Task
-Task ini berjalan dengan prioritas normal dan memiliki stack size 128*4 bytes. Saat ini task ini tidak melakukan operasi spesifik dan hanya berfungsi sebagai idle task.
 
 ### Green LED Task
 Task ini mengontrol LED Hijau dan Biru dengan karakteristik berikut:
